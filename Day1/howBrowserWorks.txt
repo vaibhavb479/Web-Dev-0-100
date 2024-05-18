@@ -31,3 +31,5 @@ Key points:
 
 5. The author emphasizes the importance of understanding the inner workings of the browser, as it can help developers write more performant and optimized web applications.
 
+
+
