@@ -29,7 +29,7 @@ Key points:
    - JavaScript can manipulate the DOM and CSSOM, so the browser needs to execute it before completing the rendering
    - Techniques like "deferred" JavaScript loading are used to improve performance by delaying JavaScript execution
 
-5. The author emphasizes the importance of understanding the inner workings of the browser, as it can help developers write more performant and optimized web applications.
+
 
 
 
