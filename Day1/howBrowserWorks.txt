@@ -1,0 +1,35 @@
+Title: How does a browser work? | Engineering side
+
+Key points:
+
+1. The browser is not just a simple software, but a full-blown operating system with various capabilities:
+   - Data/persistence layer (cookies, local storage, etc.)
+   - User interface layer
+   - Browser engine layer, which is further divided into:
+     - Rendering engine
+     - JavaScript engine
+
+2. The process of rendering an HTML page in the browser:
+   - Load the file (from network or local storage)
+   - Convert raw bytes to character sequence (based on encoding)
+   - Tokenize the character sequence
+   - Create an object model (DOM) from the tokens
+   - Establish relationships between the DOM elements
+   - Convert the DOM into a node list
+   - Create a render tree by combining the DOM and CSS object model (CSSOM)
+   - Perform layout calculations and painting the render tree on the screen
+
+3. The role of CSS:
+   - CSS is also parsed, tokenized, and converted into a CSSOM
+   - The browser engine combines the DOM and CSSOM to create the render tree
+   - CSS can sometimes become a bottleneck, as JavaScript execution is halted until the CSSOM is ready
+
+4. The relationship between JavaScript and the rendering process:
+   - When the browser encounters a script tag, it stops the rendering process to execute the JavaScript
+   - JavaScript can manipulate the DOM and CSSOM, so the browser needs to execute it before completing the rendering
+   - Techniques like "deferred" JavaScript loading are used to improve performance by delaying JavaScript execution
+
+
+
+
+
